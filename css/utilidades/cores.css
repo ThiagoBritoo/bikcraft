@@ -25,10 +25,42 @@
   color: #ffffff;
 }
 
+.cor-1 {
+  color: #f7f7f7f7;
+}
+
+.cor-2 {
+  color: #ededed;
+}
+
+.cor-3 {
+  color: #dedede;
+}
+
+.cor-4 {
+  color: #cccccc;
+}
+
 .cor-5 {
   color: #b2b2b2;
 }
 
+.cor-6 {
+  color: #9c9c9c;
+}
+
+.cor-11 {
+  color: #111111;
+}
+
 .cor-p1 {
   color: var(--cor-p1);
+}
+
+.cor-p2 {
+  color: var(--cor-p2);
+}
+
+.cor-p3 {
+  color: var(--cor-p3);
 }
