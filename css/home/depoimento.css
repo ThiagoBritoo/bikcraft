@@ -42,6 +42,7 @@
   font-size: 4.8rem;
   font-weight: 400;
   position: absolute;
+  bottom: -69px;
   color: var(--cor-p2);
 }
 
