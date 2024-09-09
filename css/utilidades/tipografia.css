@@ -28,7 +28,7 @@
 }
 
 .font-1-l {
-  font: 400 2rem/1.5 "Poppins", sans-serif;
+  font: 400 1.5rem/1.5 "Poppins", sans-serif;
 }
 
 .font-2-l,
@@ -43,7 +43,7 @@
 }
 
 .font-1-xl {
-  font: 600 2rem/1.25 "Poopins", sans-serif;
+  font: 600 4rem/1.25 "Poopins", sans-serif;
 }
 
 .font-2-xl {
@@ -79,7 +79,7 @@
   }
   .font-1-xl,
   .font-2-xl {
-    font-size: 1.5rem;
+    font-size: 2rem;
   }
 
   .font-3-m {
