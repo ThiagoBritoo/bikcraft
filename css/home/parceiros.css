@@ -33,7 +33,7 @@
 .parceiros-item::before {
   content: "";
   display: block;
-  background-color: var(--cor-9);
+  background-color: var(--cor-3);
   position: absolute;
 }
 

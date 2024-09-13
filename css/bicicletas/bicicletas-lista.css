@@ -25,6 +25,10 @@
   margin-bottom: 16px;
 }
 
+#bicicleta .bicicletas-lista img {
+  max-height: 350px;
+}
+
 .bicicletas-lista h3 {
   margin-bottom: 8px;
   display: flex;
