@@ -1,0 +1,29 @@
+<svg width="100" height="100" xmlns="http://www.w3.org/2000/svg">
+  <!-- Primeira seção com 2 colunas e 5 linhas -->
+  <circle cx="10" cy="10" r="3" fill="#e4a30b"/>
+  <circle cx="10" cy="25" r="3" fill="#e4a30b"/>
+  <circle cx="10" cy="40" r="3" fill="#e4a30b"/>
+  <circle cx="10" cy="55" r="3" fill="#e4a30b"/>
+  <circle cx="10" cy="70" r="3" fill="#e4a30b"/>
+  
+  <circle cx="25" cy="10" r="3" fill="#e4a30b"/>
+  <circle cx="25" cy="25" r="3" fill="#e4a30b"/>
+  <circle cx="25" cy="40" r="3" fill="#e4a30b"/>
+  <circle cx="25" cy="55" r="3" fill="#e4a30b"/>
+  <circle cx="25" cy="70" r="3" fill="#e4a30b"/>
+
+  <!-- Segunda seção com 2 colunas e 4 linhas -->
+  <circle cx="40" cy="10" r="3" fill="#e4a30b"/>
+  <circle cx="40" cy="25" r="3" fill="#e4a30b"/>
+  <circle cx="40" cy="40" r="3" fill="#e4a30b"/>
+  <circle cx="40" cy="55" r="3" fill="#e4a30b"/>
+
+  <circle cx="55" cy="10" r="3" fill="#e4a30b"/>
+  <circle cx="55" cy="25" r="3" fill="#e4a30b"/>
+  <circle cx="55" cy="40" r="3" fill="#e4a30b"/>
+  <circle cx="55" cy="55" r="3" fill="#e4a30b"/>
+
+  <!-- Terceira seção com 1 coluna e 2 linhas -->
+  <circle cx="70" cy="10" r="3" fill="#e4a30b"/>
+  <circle cx="70" cy="25" r="3" fill="#e4a30b"/>
+</svg>

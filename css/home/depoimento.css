@@ -3,7 +3,8 @@
   grid-template-columns: 1fr 1fr;
   align-items: center;
   justify-content: center;
-  background-color: var(--cor-p1);
+  background: var(--cor-p1) url(../../img/detalhe/bottom-right-p.svg) no-repeat
+    bottom 20px right 50px;
   margin: 0 auto;
   height: 450px;
 }
@@ -20,8 +21,12 @@
   border-radius: 0px;
 }
 
+.depoimento-conteudo {
+  /* background: ; */
+}
+
 .depoimento p {
-  max-width: 24ch;
+  max-width: 28ch;
   margin-bottom: 30px;
   margin-left: 80px;
   position: relative;

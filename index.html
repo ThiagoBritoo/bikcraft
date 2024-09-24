@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description"
     content="Bicicletas elétrica de alta precisão e qualidade feitas sobre medida para o cliente. Explore o mundo na sua velocidade com a Bikcraft.">
+  <link rel="preload" href="./css/style.css" as="style">
   <link rel="stylesheet" href="./css/style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,7 +20,7 @@
   <header class="header-bg">
     <div class="header">
       <a href="./">
-        <img src="./img/bikcraft.svg" alt="Bikcraft">
+        <img src="./img/icons/bikcraft.svg" alt="Bikcraft">
       </a>
       <nav aria-label="primaria">
         <ul class="header-menu font-1-m cor-0">
@@ -42,9 +43,9 @@
           com a Bikcraft.</p>
         <a class="botao" href="./bicicletas.html">Escolha a sua</a>
       </div>
-      <div class="introducao-imagem">
-        <img src="./img/bike-intro-action.jpg" alt="bicicleta elétrica preta">
-      </div>
+      <picture class="introducao-imagem">
+        <img src="./img/home/bike-intro-action.jpg" alt="bicicleta elétrica preta">
+      </picture>
     </div>
   </main>
 
@@ -56,14 +57,14 @@
         <a href="./bicicletas/magic.html">
           <img src="/img/home/magic-might-home.jpg" alt="bicicleta-preta">
           <h3 class="font-1-xl">Magic Might</h3>
-          <span class="font-2-m cor-8">R$ 2499</span>
+          <span class="font-2-m cor-8">R$ 4999</span>
         </a>
       </li>
       <li>
         <a href="./bicicletas/Nimbus.html">
           <img src="/img/home/nimbus-stark-home.jpg" alt="bicicleta-preta">
           <h3 class="font-1-xl">Nimbus Stark</h3>
-          <span class="font-2-m cor-8">R$ 4999</span>
+          <span class="font-2-m cor-8">R$ 2999</span>
         </a>
       </li>
       <li>
@@ -103,7 +104,7 @@
         </div>
       </div>
       <div class="tecnologia-imagem">
-        <img src="/img/tecnologia.jpg" alt="">
+        <img src="/img/home/tecnologia.jpg" alt="">
       </div>
     </div>
   </article>
@@ -142,7 +143,7 @@
 
   <article class="depoimento">
     <div class="depoimento-imagem">
-      <img src="./img/depoimento.jpg" alt="">
+      <img src="./img/home/depoimento.jpg" alt="">
     </div>
     <div class="depoimento-conteudo">
       <blockquote class="citacao font-3-l-i cor-p5">
@@ -190,7 +191,7 @@
 
   <footer class="footer-bg">
     <div class="footer container">
-      <img src="./img/bikcraft.svg" alt="Bikcraft">
+      <img src="./img/icons/bikcraft.svg" alt="Bikcraft">
       <div class="footer-contato">
         <h3 class="font-2-l cor-0">CONTATO</h3>
         <ul class="font-2-m cor-5">
@@ -228,10 +229,7 @@
     </div>
 
   </footer>
-
-
-
-
+  <script src="./js/script.js"></script>
 </body>
 
 </html>

@@ -88,6 +88,11 @@
   background-color: var(--cor-11);
 }
 
+.titulo {
+  background: url(../../img/detalhe/top-right.svg) no-repeat top right;
+  background-size: 85px;
+}
+
 .titulo p {
   margin-bottom: 4px;
 }
