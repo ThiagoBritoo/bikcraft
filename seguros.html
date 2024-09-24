@@ -7,13 +7,13 @@
   <meta name="description"
     content="Bicicletas elétrica de alta precisão e qualidade feitas sobre medida para o cliente. Explore o mundo na sua velocidade com a Bikcraft.">
   <link rel="preload" href="./css/style.css" as="style">
-  <link rel="stylesheet" href="./css/style.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="icon" type="image/png" sizes="32x32" href="./favicon.png">
+  <link rel="stylesheet" href="./css/style.min.css">
   <link
     href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Roboto:wght@400;500&family=Vesper+Libre:wght@400;500;700&display=swap"
     rel="stylesheet">
   <title>Seguros | Bikcraft</title>
+  <script>document.documentElement.classList.add('js')</script>
 </head>
 
 <body id="seguros">
@@ -39,7 +39,7 @@
         <h1 class="font-1-xxl cor-0">você seguro<span class="cor-p1">.</span> </h1>
       </div>
     </div>
-    <div class="seguros container">
+    <div class="seguros container fadeInLeft" data-anime="200">
       <div class="seguros-item">
         <h3 class="font-1-xl cor-6">PRATA</h3>
         <span class="font-1-xl cor-0">R$ 199 <span class="font-1-xs cor-6">mensal</span></span>
@@ -49,10 +49,10 @@
           <li>Suporte 08h às 18h</li>
           <li>Cobertura estadual</li>
         </ul>
-        <a class="botao secundario" href="/orcamento.html">Inscreva-se</a>
+        <a class="botao secundario" href="/orcamento.html?tipo=seguro&produto=prata">Inscreva-se</a>
       </div>
 
-      <div class="seguros-item">
+      <div class="seguros-item fadeInRight" data-anime="400">
         <h3 class="font-1-xl cor-p1">OURO</h3>
         <span class="font-1-xl cor-0">R$ 299 <span class="font-1-xs cor-6">mensal</span></span>
         <ul class="font-2-m cor-0">
@@ -63,7 +63,7 @@
           <li>Desconto em parceiros</li>
           <li>Acesso ao Clube Bikcraft</li>
         </ul>
-        <a class="botao" href="/orcamento.html">Inscreva-se</a>
+        <a class="botao" href="/orcamento.html?tipo=seguro&produto=ouro">Inscreva-se</a>
       </div>
     </div>
 
@@ -118,35 +118,48 @@
     <h2 class="font-1-xxl">perguntas frequentes<span class="cor-p1">.</span></h2>
     <dl>
       <div>
-        <dt class="font-1-m-b">Quais formas de pagamento vocês aceitam?</dt>
-        <dd class="font-2-xs cor-9">Aceitamos pagamentos parcelados em todos os cartões de crédito. Para pagamentos à
+        <dt><button class="font-1-m-b" aria-controls="pergunta1" aria-expanded="true">Quais formas de pagamento vocês
+            aceitam?</button></dt>
+        <dd id="pergunta1" class="font-2-s cor-9 ativo">Aceitamos pagamentos parcelados em todos os cartões de crédito.
+          Para
+          pagamentos à
           vista,
           aceitamos PIX e Boleto via PagSeguro.</dd>
       </div>
       <div>
-        <dt class="font-1-m-b">Como funciona o parcelamento sem juros?</dt>
-        <dd class="font-2-xs cor-9">Oferecemos parcelamento sem juros em até 6 vezes em todos os cartões de crédito,
+        <dt><button class="font-1-m-b" aria-controls="pergunta2" aria-expanded="false">Como funciona
+            o parcelamento sem juros?</button></dt>
+        <dd id="pergunta2" class="font-2-s cor-9">Oferecemos parcelamento sem juros em até 6 vezes em todos os cartões
+          de crédito,
           dependendo do valor total da compra.</dd>
       </div>
       <div>
-        <dt class="font-1-m-b">Posso alterar a forma de pagamento após a compra?</dt>
-        <dd class="font-2-xs cor-9">Não. Após a finalização da compra, não é possível alterar a forma de pagamento.
+        <dt><button class="font-1-m-b" aria-controls="pergunta3" aria-expanded="false">Posso alterar a forma de
+            pagamento após a compra?</button></dt>
+        <dd id="pergunta3" class="font-2-s cor-9">Não. Após a finalização da compra, não é possível alterar a forma de
+          pagamento.
           Certifique-se de escolher a opção correta no momento da compra.</dd>
       </div>
       <div>
-        <dt class="font-1-m-b">Vocês oferecem descontos para pagamentos à vista?</dt>
-        <dd class="font-2-xs cor-9">Sim, pagamentos à vista via PIX ou Boleto recebem um desconto de 5% sobre o valor
+        <dt><button class="font-1-m-b" aria-controls="pergunta4" aria-expanded="false">Vocês oferecem descontos para
+            pagamentos à vista?</button></dt>
+        <dd id="pergunta4" class="font-2-s cor-9">Sim, pagamentos à vista via PIX ou Boleto recebem um desconto de 5%
+          sobre o valor
           total
           da compra.</dd>
       </div>
       <div>
-        <dt class="font-1-m-b">É seguro realizar pagamentos pelo site?</dt>
-        <dd class="font-2-xs cor-9">Sim, todas as transações realizadas em nosso site são protegidas por criptografia e
+        <dt><button class="font-1-m-b" aria-controls="pergunta5" aria-expanded="false">É seguro realizar pagamentos pelo
+            site?</button></dt>
+        <dd id="pergunta5" class="font-2-s cor-9">Sim, todas as transações realizadas em nosso site são protegidas por
+          criptografia e
           processadas através de gateways de pagamento confiáveis, como o PagSeguro.</dd>
       </div>
       <div>
-        <dt class="font-1-m-b">Posso pagar com mais de um cartão de crédito?</dt>
-        <dd class="font-2-xs cor-9">Atualmente, não aceitamos pagamento dividido entre dois ou mais cartões de crédito.
+        <dt><button class="font-1-m-b" aria-controls="pergunta6" aria-expanded="false">Posso pagar com mais de um cartão
+            de crédito?</button></dt>
+        <dd id="pergunta6" class="font-2-s cor-9">Atualmente, não aceitamos pagamento dividido entre dois ou mais
+          cartões de crédito.
           Você
           deve escolher um cartão para o pagamento total.</dd>
       </div>
@@ -195,6 +208,7 @@
     </div>
 
   </footer>
+  <script src="./js/plugins/simple-anime.js"></script>
   <script src="./js/script.js"></script>
 </body>
 
