@@ -25,7 +25,8 @@ a {
   color: inherit;
 }
 
-img {
+img,
+picture {
   display: block;
   max-width: 100%;
 }

@@ -1,3 +1,9 @@
+#home,
+html {
+  overflow-x: hidden;
+  max-width: 100vw;
+}
+
 .introducao-bg {
   background: var(--cor-12);
   box-shadow: inset 0 -120px var(--cor-0);
@@ -42,6 +48,7 @@
 
   .introducao-conteudo {
     padding-bottom: 0px;
+    padding-top: 0px;
   }
 
   .introducao h1 {

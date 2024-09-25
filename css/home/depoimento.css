@@ -21,10 +21,6 @@
   border-radius: 0px;
 }
 
-.depoimento-conteudo {
-  /* background: ; */
-}
-
 .depoimento p {
   max-width: 28ch;
   margin-bottom: 30px;
@@ -57,6 +53,7 @@
     grid-template-rows: 1fr 1fr;
     height: 460px;
     align-items: start;
+    background: var(--cor-p1);
   }
 
   .depoimento-imagem {
@@ -66,5 +63,17 @@
   .depoimento p {
     text-align: center;
     margin: 0 auto 20px;
+  }
+  .citacao p::before {
+    left: -40px;
+  }
+}
+
+@media (max-width: 600px) {
+  .depoimento p {
+    max-width: 25ch;
+  }
+  .citacao p::before {
+    left: -20px;
   }
 }
